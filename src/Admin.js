@@ -39,8 +39,13 @@ const Admin = ()=>{
         <Sidebar handleChange={handleChange}/>
                     
         <div style={{marginLeft:'260px'}}>
-                <h1> hello world</h1>
-                <Link to="/addturf" ><Button variant="primary">Add  Turf</Button></Link>
+                <h1> Welcome Admin</h1>
+                <Link to="/addturf" style={
+                  {
+                    float:"right",
+                    marginRight:80
+                  }
+                }><Button variant="primary">Add  Turf</Button></Link>
                 <div style={{
                   display: 'flex',
                   flexDirection: 'row',
