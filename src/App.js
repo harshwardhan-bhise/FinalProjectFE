@@ -5,6 +5,9 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import Login from './Login'
 import SignUp from './SignUp'
 import Admin from './Admin'
+import Turf from './Turf'
+import AddTurf from './AddTurf'
+// import AdminLogin from './AdminLogin'
 function App() {
   return (
     <Router>
@@ -14,6 +17,7 @@ function App() {
             {/* <Link className="navbar-brand" to={'/sign-in'}>
               positronX
             </Link> */}
+           
             <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
@@ -37,7 +41,8 @@ function App() {
               <Route path="/sign-in" element={<Login />} />
               <Route path="/sign-up" element={<SignUp />} />
               <Route path="/admin" element={<Admin/>} />
-
+              <Route path="/addturf" element={<AddTurf/>}/>
+              <Route path="/addturf/:id" element={<AddTurf/>}/>
             </Routes>
           </div>
         </div>
